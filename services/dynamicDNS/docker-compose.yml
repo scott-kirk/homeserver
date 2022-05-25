@@ -3,6 +3,6 @@ version: '3'
 services:
   dynamicDNS:
     image: ddns:latest
-    restart: unless-stopped
+    restart: always
     env_file:
       - secrets.env
