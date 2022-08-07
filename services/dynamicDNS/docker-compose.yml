@@ -4,5 +4,6 @@ services:
   dynamicDNS:
     image: ddns:latest
     restart: always
+    network_mode: "host"
     env_file:
       - secrets.env
